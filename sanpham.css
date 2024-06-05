@@ -1,0 +1,203 @@
+/* Định dạng danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+/* Định dạng mỗi sản phẩm */
+.product-item {
+     /* Số 33.33% để sản phẩm hiển thị ở cỡ đều nhau trên các màn hình */
+    /* margin-bottom: 30px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px 8px 0px 0px;
+    overflow: hidden;
+}
+.product-item img{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Định dạng hình ảnh sản phẩm */
+.product-item .image img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee; /* Đường viền dưới hình ảnh */
+}
+
+/* Định dạng nội dung sản phẩm */
+.product-item .content {
+    padding: 20px;
+}
+
+/* Định dạng tiêu đề sản phẩm */
+.product-item .content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+/* Định dạng giá sản phẩm */
+.product-item .content .price {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Định dạng nút Chi tiết */
+.product-item .content .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hiệu ứng hover cho nút Chi tiết */
+.product-item .content .btn:hover {
+    background-color: #ff6347;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+   
+}
+
+.col {
+    max-width: 25%; /* 25% để mỗi cột chiếm 1/4 chiều rộng của hàng, và trừ đi 30px để tạo khoảng cách giữa các cột */
+    flex: 0 0 25%;
+    padding: 0 15px; /* Khoảng cách giữa các cột */
+}
+/* Định dạng dropdown */
+.form-select {
+    width: 15em;
+    padding: 10px; 
+    font-size: 20px; 
+    border: 2px solid #ff6347; 
+    border-radius: 5px; /* Bo tròn các góc */
+    background-color: #f8f8f8; /* Màu nền */
+    color: #333; /* Màu chữ */
+    width: 200px; /* Chiều rộng */
+    font-family: 'Crimson Text', sans-serif !important;
+}
+
+/* Khi người dùng hover (di chuột) vào dropdown */
+.form-select:hover {
+    border-color: #999; /* Thay đổi màu viền khi hover */
+}
+
+/* Khi dropdown được chọn */
+.form-select:focus {
+    outline: none; /* Loại bỏ đường viền nổi */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng đổ */
+    border-color: #666; /* Thay đổi màu viền khi được chọn */
+}
+.box-container
+{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Crimson Text', sans-serif !important;
+}
+.form-select-color{
+    width: 200px; /* Chiều rộng mong muốn */
+    padding: 10px; /* Khoảng cách giữa nội dung và viền */
+    font-size: 16px; /* Kích thước font chữ */
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 5px; /* Bo tròn các góc */
+    background-color: #f8f8f8; /* Màu nền */
+    color: #333; /* Màu chữ */
+}
+.content-1 {
+    padding: 10px; /* Add padding */
+    text-align: center; /* Center align the content */
+    margin-top: 10px; /* Add margin to separate from the product image */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.price {
+    font-size: 18px; /* Adjust font size */
+    color: #333; /* Set color */
+}
+
+.buynow {
+    background-color: #ff0066; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add cursor pointer */
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-weight: bold; /* Set font weight */
+}
+
+.buynow a {
+    color: #fff; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+.text-center {
+    text-align: center !important;
+}
+.d-flex-center {
+    align-items: center;
+}
+#pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-node,
+.next,
+.prev {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0 4px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #191515;
+    font-size: 20px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.page-node:hover,
+.next:hover,
+.prev:hover {
+    background-color: #000000;
+}
+
+.current {
+    background-color: #000000;
+    color: #fff;
+    border-color: #050506;
+}
+
+.next,
+.prev {
+    padding: 8px 12px;
+}
+
+.next i,
+.prev i {
+    font-size: 16px;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.5;
+}
+#product-template {
+    margin-top: 30px;
+}
+

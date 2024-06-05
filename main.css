@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+    --main-color:pink;
+    --black: #141215;
+}
+
+*{
+    font-family: 'Poppins' , sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition:  none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+html::-webkit-scrollbar-track{
+    background: var(--black);
+}
+html::-webkit-scrollbar-thumb{
+    background: var(--main-color);
+}
+body{
+    overflow-x: hidden;
+    /* background: var(--black); */
+    
+}
+section{
+    padding: 16rem 9%;
+}
+.heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #fff;
+}
+.heading span{
+    color: var(--main-color);
+}
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    background: #fff;
+    font-weight: 500;
+    color: var(--black);
+    cursor: pointer;
+}
+.btn:hover{
+    background: var(--main-color);
+    color: #fff;
+    letter-spacing: .1rem;
+}
+.header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bolder;
+}
+.header .logo i{
+    padding-right: .5rem;
+    color: var(--main-color);
+    animation: floating 3s linear infinite;
+}
+@keyframes floating{
+    0%, 100%{
+        transform:translateY(0rem);
+    }
+    50%{
+        transform:translateY(-1rem);
+    }
+}
+.header .navbar a{
+    font-size: 1.7rem;
+    color: #fff;
+    margin: 0 1rem;
+}
+
+.header .navbar a:hover{
+    color: var(--main-color);
+}
+.header .icons a,
+.header .icons div{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.header .icons a:hover,
+.header .icons div:hover{
+    color: var(--main-color);
+}
+#menu-btn{
+    display: none;
+}
+.header .search-form{
+    position: absolute;
+    top: 115%;
+    right: -105%;
+    background: #fff;
+    width: 50rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.header .search-form.active{
+    right: 2rem;
+    opacity: 1;
+    transition: .4s linear;
+}
+
+.header .search-form input{
+    width: 100%;
+    padding: 0 1.5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    text-transform: none;
+}
+.header .search-form label{
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
+    color: var(--black);
+    cursor: pointer;
+}
+.header .search-form label:hover{
+    color: var(--main-color);
+}
+.header .icons{
+    display: flex;
+    align-items: center;
+}
+.login_container{
+    display: flex;
+    align-items: center;
+}
+.login_container i{
+    margin-right: 10px;
+}
+.user_login{
+    font-size: 14px;
+    font-weight: 500;
+}
+.btn-buynow{
+    margin: 10px;
+}
+.btn-buynow {
+    margin: 10px;
+    padding: 8px;
+    width: 100%;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    font-size: 16px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-buynow:hover{
+    color: white;
+    background: black;
+}
+.content-1 {
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.product_content{
+    box-shadow: 0px 0px 4px 2px #ccc;
+    border-radius: 8px;
+}
+#product_list-render .col-lg-3 {
+    padding: 15px !important;
+}
+.login_container p {
+    margin-bottom: 0px;
+}
+.btn-action{
+    display: none;
+    position: fixed;
+    top: 97px;
+    background: transparent;
+    padding: 15px;
+    right: 115px;
+    border: 1px solid;
+}
+
+.btn-action a{
+    color: black !important;
+}

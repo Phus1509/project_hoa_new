@@ -1,0 +1,205 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flower Shop</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="Flowercss.css">
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo"><i class="fas fa-seedling"></i>Flowers Rains</a>
+            <nav class="navbar">
+                <a href="#home" style="color: pink;" class="active">Trang Chủ</a>
+                <a href="sanpham.html">SẢN PHẨM</a>
+                <a href="TG.html">GIỚI THIỆU</a>
+                <a href="hoacuoi.html">HOA SƯ KIỆN</a>
+                <a href="#contact">HOA TƯƠI</a>
+                <a href="#blogs">HOA KHÔ</a>
+            </nav>
+            <div class="icons">
+                <div id="menu-btn" class="fas fa-bars" ></div>
+                <div id="search-box" class="fas fa-search"></div>
+                    <a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                </a>
+                <a id="btn_header-login" class="login_container" target="_blank">
+                    <i class="fas fa-user"></i>
+                    <p id="user_login"></p>
+                </a>
+                <div class="btn-action">
+                    <a href="login.html" class="login_container" target="_blank">
+                        Đăng nhập
+                    </a>
+                    <a href="register.html" class="login_container" target="_blank">
+                        Đăng kí
+                    </a>
+                </div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            </div>
+            <form action="" class="search-form">
+                <input type="search" placeholder="Search here..." id="input-box">
+                <label for="input-box" class="fas fa-search"></label>
+            </form>
+        </header>
+        <section class="home" id="home">
+            <div class="swiper home-slider">
+                <div id="swiper-product" class="swiper-wrapper">
+                    <div class="swiper-slide box" style="background: url(images/wallpaperflare.com_wallpaper\ \(1\).jpg);">
+                        <div class="content">
+                            <h3>Hoa Tươi</h3>
+                            <p>Hãy Là Những Bông Hoa Đẹp Nhất Của Mình</p>
+                            <div class="button">
+                                <a href="sign up.html" target="_blank" class="btn">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box" style="background: url(images/wallpaperflare.com_wallpaper\ \(6\).jpg);">
+                        <div class="content">
+                            <h3>Giảm Giá 30%</h3>
+                            <p>Trên Tất Cả Khách Hàng</p>
+                            <div class="button">
+                                <a href="sign up.html" target="_blank" class="btn">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide box" style="background: url(images/muchammad-rizky-DClXkTaUaPY-unsplash.jpg);">
+                        <div class="content">
+                            <h3>Ưu Đãi Có Hạn</h3>
+                            <p>Đừng Bỏ Lỡ</p>
+                            <div class="button">
+                                <a href="sign up.html" target="_blank" class="btn">shop now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        <h1 class="heading" style="color:black">Sản Phẩm <span>Mới</span></h1>
+        <section class="products" id="products" style="padding: 0.2rem 9%;">
+            <div class=" swiper products-slider" data-aos="zoom-in">
+                <div id="swiper-product-1" class="swiper-wrapper">
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="content" data-aos="fade-right">
+                <h3>about <span style="color: #fff;">us</span></h3>
+                <p>Để có những bông hoa đẹp nhất và tươi nhất trong khu vườn mùa đông, Ventinove có chính xác thứ bạn đang tìm kiếm! Hãy xem bộ sưu tập phong phú các kiểu cắm hoa của chúng tôi để biến dịp lễ tiếp theo của bạn trở nên đáng nhớ.</p>
+                <a href="TG.html" class="btn">read more</a>
+            </div>
+        </section>
+        <h1 class="heading" style="color:black">our <span>blogs</span></h1>
+        <section class="blogs" id="blogs" style="padding: 2rem 9%;">
+            <dic class="box-container">
+                <div class="box" data-aos="fade-right">
+                    <div class="image">
+                        <img src="images/couple-g5755969e7_640.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Believe in the Magic of Flowers.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i>4th Jan,2022</a>
+                            <a href="#"><i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-down">
+                    <div class="image">
+                        <img src="images/woman-g0973c91b0_640.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Believe in the Magic of Flowers.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i> 4th Jan,2022</a>
+                            <a href="#"><i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" data-aos="fade-left">
+                    <div class="image">
+                        <img src="images/bouquet-g80864139f_640.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <h3>Believe in the Magic of Flowers.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, tempore.</p>
+                        <a href="#" class="btn">read more</a>
+                        <div class="icons">
+                            <a href="#"><i class="fas fa-calendar"></i>4th Jan,2022</a>
+                            <a href="#"><i class="fas fa-user"></i>by admin</a>
+                        </div>
+                    </div>
+                </div>
+            </dic>
+        </section>
+        <section class="footer" id="footer">
+            <div class="box-container">
+                <div class="box" data-aos="fade-right">
+                    <h3>our branches</h3>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>India</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>USA</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Russia</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>France</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Japan</a>
+                </div>
+                <div class="box" data-aos="fade-down">
+                    <h3>Quick links</h3>
+                    <a href="Flower.html"><i class="fas fa-arrow-right"></i>Home</a>
+                    <a href="sanpham.html"><i class="fas fa-arrow-right"></i>Products</a>
+                    <a href="TG.html"><i class="fas fa-arrow-right"></i>Giới Thiệu</a>
+                    <a href="hoacuoi.html"><i class="fas fa-arrow-right"></i>Đám Cưới & Sự Kiện</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Contact</a>
+                    <a href="#"><i class="fas fa-arrow-right"></i>Blogs</a>
+
+                </div>
+                <div class="box" data-aos="fade-up">
+                    <h3>Contact us</h3>
+                    <a href="#"><i class="fas fa-phone"></i>+123-456-7890</a>
+                    <a href="#"><i class="fas fa-phone"></i>+110-234-562</a>
+                    <a href="#"><i class="fas fa-envelope"></i>deepak21062000@gmail.com</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>Bihar, India - 400104</a>
+                </div>
+                <div class="box" data-aos="fade-left">
+                    <h3>Contact us</h3>
+                    <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                    <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                    <a href="#"><i class="fab fa-linkedin"></i>Linkedin</a>
+                    <a href="#"><i class="fab fa-pinterest"></i>Pinterest</a>
+                </div>
+            </div>
+            <div class="credit">created by <span>Bad Boyz</span>| all rights reserved</div>
+
+        </section>
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+        <script src="FlowerSrcipt.js"></script>
+        <script src="main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+
+    </body>
+
+    </html>
+
+    <!-- <div class="select hidden">
+        <div class="selector-wrapper"><span class="custom-dropdown custom-dropdown--white"><select class="single-option-selector custom-dropdown__select custom-dropdown__select--white" data-option="option1" id="product-select-option-0"><option value="Default Title">Default Title</option></select></span></div><select id="product-select" name="id" style="display: none;"><option value="1121601702" data-available="true" data-variant="Default Title">Default Title</option></select>
+    </div> -->
