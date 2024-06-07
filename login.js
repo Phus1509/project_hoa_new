@@ -2,6 +2,7 @@ $(document).ready(function() {
     $('#loginForm').submit(function(event) {
         event.preventDefault();
         var username = $('#staticEmail').val();
+        console.log("username", username)
         var password = $('#inputPassword').val();
         $.ajax({
             url: 'http://localhost:5000/user/login-user',
